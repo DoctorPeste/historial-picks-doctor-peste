@@ -5,7 +5,7 @@
 - **Pick:** Ascoli ganará cualquier mitad
 - **Cuota:** 1,61
 - **Stake:** 1 unidad
-- **Casa:** No identificada en la captura. No se inventa ninguna casa.
+- **Casa:** Bet365 (aclarado por Miguel el 26-10: todas las capturas son de Bet365, aunque la captura no mostraba la casa).
 - **Estado:** Pendiente
 - **Resultado:** Pendiente. Se sellará tras el partido, sin editar este registro previo.
 
