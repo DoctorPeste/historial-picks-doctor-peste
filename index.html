@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Historial de picks — Doctor Peste</title>
+<style>
+  :root{--neon:#39FF88;--bg:#070B08;--card:#101A12;--line:#22382A;--txt:#E8E6DA;--mut:#8FA99A;--green:#22C55E;--red:#EF4444}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--bg);color:var(--txt);font-family:-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;line-height:1.55}
+  a{color:var(--neon)}
+  .wrap{max-width:1020px;margin:0 auto;padding:0 20px}
+  .topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+  .brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:2px;font-size:clamp(1rem,3.5vw,1.35rem);color:var(--txt);text-decoration:none;white-space:nowrap}
+  .brand svg{width:30px;height:30px;flex:0 0 auto}
+  .top-link{font-size:.9rem;white-space:nowrap}
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line);background:linear-gradient(180deg,#0B140D 0%,#070B08 55%,#0A1710 100%)}
+  .smoke{position:absolute;border-radius:50%;filter:blur(48px);opacity:.45;pointer-events:none}
+  .s1{width:340px;height:340px;left:-90px;top:-40px;background:radial-gradient(circle,rgba(57,255,136,.55),transparent 70%)}
+  .s2{width:420px;height:420px;right:-100px;bottom:-140px;background:radial-gradient(circle,rgba(57,255,136,.4),transparent 70%)}
+  .s3{width:220px;height:220px;left:38%;top:55%;background:radial-gradient(circle,rgba(180,255,210,.3),transparent 70%)}
+  @keyframes drift{from{transform:translate(0,0)}to{transform:translate(24px,-18px)}}
+  .smoke{animation:drift 9s ease-in-out infinite alternate}
+  @media (prefers-reduced-motion:reduce){.smoke{animation:none}}
+  .hero-grid{position:relative;display:grid;grid-template-columns:1.25fr .75fr;gap:24px;align-items:center;padding:52px 0 44px}
+  .kicker{color:var(--neon);letter-spacing:3px;font-size:.8rem;font-weight:700}
+  h1{font-size:clamp(2.2rem,7vw,4.2rem);line-height:.95;letter-spacing:1px;color:#fff;transform:skewX(-3deg);margin:14px 0 16px}
+  h1 span{color:var(--neon)}
+  .hero p{color:var(--mut);font-size:1.1rem;max-width:560px}
+  .hero p strong{color:var(--txt)}
+  .ecg{height:28px;margin:20px 0;max-width:420px}
+  .btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+  .btn{display:inline-block;padding:13px 26px;border-radius:999px;font-weight:800;text-decoration:none;letter-spacing:.5px}
+  .btn-primary{background:var(--neon);color:#07130B}
+  .btn-ghost{border:1px solid var(--neon);color:var(--neon)}
+  .doctor{width:100%;max-width:360px;margin:0 auto;display:block;border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,.6)}
+  @media (max-width:760px){
+    .hero-grid{grid-template-columns:1fr;padding:44px 0 36px}
+    .doctor-wrap{position:absolute;inset:0;display:flex;justify-content:flex-end;align-items:center;opacity:.22}
+    .doctor{max-width:260px}
+    .hero-text{position:relative}
+  }
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:28px 0}
+  .stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 12px;text-align:center}
+  .stat .v{font-size:1.55rem;font-weight:800;color:var(--neon)}
+  .stat .v.pos{color:var(--green)} .stat .v.neg{color:var(--red)}
+  .stat .l{color:var(--mut);font-size:.78rem;text-transform:uppercase;letter-spacing:1px;margin-top:4px}
+  .stat .s{color:var(--mut);font-size:.8rem;margin-top:6px}
+  section{margin:40px 0}
+  h2{color:var(--neon);font-size:1.25rem;margin-bottom:14px;letter-spacing:1px}
+  .cards{display:grid;gap:12px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+  .card h3{font-size:1.05rem}
+  .card .meta{color:var(--mut);font-size:.9rem;margin:4px 0 8px}
+  .pill{display:inline-block;padding:2px 10px;border-radius:999px;font-size:.8rem;font-weight:800;text-transform:uppercase;letter-spacing:.5px}
+  .pill.pendiente{background:#22382A;color:var(--mut)} .pill.verde{background:#12351E;color:var(--green)} .pill.rojo{background:#3A1212;color:var(--red)} .pill.nulo{background:#2A2A2A;color:var(--txt)}
+  .links{margin-top:10px;font-size:.9rem}
+  .links a{margin-right:14px}
+  details{margin-top:10px;color:var(--mut)} details summary{cursor:pointer;color:var(--txt)}
+  .filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+  .filters button{padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--txt);cursor:pointer}
+  .filters button.active{background:var(--neon);color:#07130B;border-color:var(--neon);font-weight:800}
+  table{width:100%;border-collapse:collapse;font-size:.95rem}
+  th,td{padding:12px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+  th{color:var(--neon);text-transform:uppercase;font-size:.75rem;letter-spacing:1px}
+  .empty,.errorbox{text-align:center;color:var(--mut);padding:32px 12px;border:1px dashed var(--line);border-radius:12px}
+  .errorbox{display:none;border-color:var(--red);color:#FCA5A5}
+  .errorbox.show{display:block}
+  .steps{display:grid;gap:12px}
+  .step{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+  .step b{color:var(--neon)}
+  .verify{background:var(--card);border:1px solid var(--neon);border-radius:12px;padding:18px}
+  .verify ol{margin:8px 0 0 20px;color:var(--mut)} .verify ol b{color:var(--txt)}
+  .table-wrap{display:block} .cards-only{display:none}
+  @media (max-width:760px){.table-wrap{display:none} .cards-only{display:grid} table{font-size:.82rem} h1{font-size:clamp(2rem,11vw,2.8rem)}}
+  footer{border-top:1px solid var(--line);margin-top:48px;padding:24px 20px 40px;text-align:center;color:var(--mut);font-size:.85rem}
+  footer .r18{display:inline-block;border:2px solid var(--red);color:var(--red);border-radius:50%;width:44px;height:44px;line-height:40px;font-weight:800;margin-bottom:10px}
+</style>
+</head>
+<body>
+<header class="wrap topbar">
+  <a class="brand" href="#top" aria-label="Doctor Peste">
+    <svg viewBox="0 0 60 60" aria-hidden="true"><ellipse cx="30" cy="12" rx="26" ry="6" fill="#E8E6DA"/><rect x="18" y="10" width="24" height="12" rx="3" fill="#E8E6DA"/><path d="M30 22 L18 44 L30 52 L42 44 Z" fill="#E8E6DA"/><circle cx="24" cy="32" r="3" fill="#39FF88"/><circle cx="36" cy="32" r="3" fill="#39FF88"/></svg>
+    DOCTOR PESTE
+  </a>
+  <a class="top-link" href="https://github.com/DoctorPeste/historial-picks-doctor-peste" target="_blank" rel="noopener">Comprobar registros</a>
+</header>
+
+<section class="hero" id="top">
+  <div class="smoke s1"></div><div class="smoke s2"></div><div class="smoke s3"></div>
+  <div class="wrap hero-grid">
+    <div class="hero-text">
+      <div class="kicker">SE ABRE LA CONSULTA</div>
+      <h1>EL DOCTOR<br><span>HA HABLADO.</span></h1>
+      <p>Aquí se publican los pronósticos <strong>antes del partido</strong>.<br>Después se enseñan las consecuencias. <strong>Verdes y rojos.</strong></p>
+      <svg class="ecg" viewBox="0 0 420 28" fill="none" aria-hidden="true"><path d="M0 14 H110 L130 14 L142 2 L158 26 L172 14 H260 L275 14 L285 6 L298 22 L310 14 H420" stroke="#39FF88" stroke-width="2"/></svg>
+      <div class="btns">
+        <a class="btn btn-primary" href="#historial">VER HISTORIAL</a>
+        <a class="btn btn-ghost" href="https://github.com/DoctorPeste/historial-picks-doctor-peste" target="_blank" rel="noopener">COMPROBAR REGISTROS</a>
+      </div>
+    </div>
+    <div class="doctor-wrap"><img class="doctor" src="doctor-hero.jpg" alt="El Doctor Peste entre humo verde, con pizarras tácticas de fondo"></div>
+  </div>
+</section>
+
+<main class="wrap">
+  <div id="errorBox" class="errorbox">No se han podido cargar los datos del registro. Esto no es un historial vacío: vuelve a intentarlo más tarde.</div>
+
+  <div class="stats" id="cifras">
+    <div class="stat"><div class="v" id="cPublicados">—</div><div class="l">Picks publicados</div><div class="s">Volumen total</div></div>
+    <div class="stat"><div class="v" id="cResueltos">—</div><div class="l">Picks resueltos</div><div class="s">Muestra de resultados</div></div>
+    <div class="stat"><div class="v" id="cBalance">—</div><div class="l">Balance</div><div class="s">Resultado acumulado</div></div>
+    <div class="stat"><div class="v" id="cYield">—</div><div class="l">Yield</div><div class="s">Balance / unidades resueltas</div></div>
+    <div class="stat"><div class="v" id="cDesglose">—</div><div class="l">Verdes / rojos / nulos</div><div class="s">Desglose completo</div></div>
+    <div class="stat"><div class="v" id="cCuota">—</div><div class="l">Cuota media</div><div class="s">Dato secundario</div></div>
+  </div>
+
+  <section id="ultimos">
+    <h2>ÚLTIMOS PICKS</h2>
+    <div id="latest" class="cards"></div>
+  </section>
+
+  <section id="historial">
+    <h2>HISTORIAL COMPLETO</h2>
+    <div class="filters" role="group" aria-label="Filtrar historial">
+      <button data-filter="todos" class="active">Todos</button>
+      <button data-filter="pendiente">Pendientes</button>
+      <button data-filter="verde">Verdes</button>
+      <button data-filter="rojo">Rojos</button>
+      <button data-filter="nulo">Nulos</button>
+    </div>
+    <div class="table-wrap"><table><thead><tr><th>Fecha</th><th>Partido</th><th>Pronóstico</th><th>Cuota</th><th>Uds.</th><th>Estado</th><th>Resultado</th><th>Enlaces</th></tr></thead><tbody id="historyTable"></tbody></table></div>
+    <div id="historyCards" class="cards cards-only"></div>
+    <div id="historyEmpty" class="empty" style="display:none">Aún no hay picks publicados. El contador empieza en el pick 1.</div>
+    <div id="historyError" class="empty" style="display:none">No se han podido cargar los datos del registro. Esto no es un historial vacío.</div>
+  </section>
+
+  <section id="reglas">
+    <h2>EL PARTE MÉDICO</h2>
+    <div class="steps">
+      <div class="step"><b>1. Antes del partido.</b> El pronóstico se publica antes de que empiece, con su cuota real y 1 unidad fija.</div>
+      <div class="step"><b>2. Sin editar el registro.</b> El resultado se añade después, en una publicación aparte, sin tocar lo registrado antes.</div>
+      <div class="step"><b>3. Verdes y rojos.</b> No se borra nada. Se enseñan las consecuencias, también cuando salen mal.</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="verify">
+      <h2 style="margin-bottom:8px">CÓMO VERIFICARLO</h2>
+      <p>Todo el registro es un <b>registro previo verificable</b> en el repositorio público <b>DoctorPeste/historial-picks-doctor-peste</b>:</p>
+      <ol>
+        <li><b>picks.json</b> — el registro completo en formato máquina, que alimenta esta página.</li>
+        <li><b>picks/</b> — la ficha individual de cada pick.</li>
+        <li><b>banners/</b> — el banner del pick y el banner del resultado.</li>
+      </ol>
+      <p style="margin-top:10px"><a href="https://github.com/DoctorPeste/historial-picks-doctor-peste" target="_blank" rel="noopener">Abrir el repositorio y revisar las cuentas</a></p>
+      <p style="margin-top:14px"><b>¿Cómo se nota si se intenta manipular?</b> Cada pick y cada resultado es un commit aparte, con fecha y hora públicas. Si se edita un pick ya registrado, aparece un commit nuevo con fecha posterior y el cambio marcado, no desaparece el anterior en un uso normal. El commit del pick debe ser anterior a la hora de inicio del partido. Limitación honesta: el propietario podría borrar el repo o reescribir todo el historial, pero entonces los enlaces y commits ya compartidos dejarían de cuadrar.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="r18">18+</div>
+    <p>Solo para mayores de 18 años. La ludopatía es un riesgo del juego. Más información en juegoseguro.es.</p>
+    <p style="margin-top:8px">Historial propio desde el pick 1.</p>
+  </footer>
+</main>
+
+<script>
+const REPO_URL = "https://github.com/DoctorPeste/historial-picks-doctor-peste";
+let allPicks = [];
+let currentFilter = "todos";
+const $ = (id) => document.getElementById(id);
+const fmtU = (v) => (v >= 0 ? "+" : "") + v.toFixed(2).replace(".", ",") + " u";
+const fmtPct = (v) => v.toFixed(2).replace(".", ",") + " %";
+const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+function normResult(p) {
+  const r = String(p.resultado || p.estado || "pendiente").toLowerCase();
+  if (["verde", "win", "ganado", "acertado"].includes(r)) return "verde";
+  if (["rojo", "loss", "perdido", "fallado"].includes(r)) return "rojo";
+  if (["nulo", "void", "anulado", "push"].includes(r)) return "nulo";
+  return "pendiente";
+}
+function stakeOf(p) { const s = parseFloat(p.stake_u ?? p.unidades ?? 1); return isFinite(s) ? s : 1; }
+function profitOf(p) {
+  if (p.beneficio_u != null) return parseFloat(p.beneficio_u);
+  if (p.unidades_resultado != null) return parseFloat(p.unidades_resultado);
+  const r = normResult(p), cuota = parseFloat(p.cuota), st = stakeOf(p);
+  if (r === "verde" && isFinite(cuota)) return st * (cuota - 1);
+  if (r === "rojo") return -st;
+  return 0;
+}
+function dateOf(p) { return [p.fecha_partido || p.fecha, p.hora_partido || p.hora].filter(Boolean).join(" "); }
+function linksOf(p) {
+  const out = [];
+  const reg = p.publicado_en || p.registro_url;
+  if (reg) out.push('<a href="' + esc(reg) + '" target="_blank" rel="noopener">Registro previo</a>');
+  const arch = p.archivo || p.ficha;
+  if (arch) {
+    const url = /^https?:/.test(arch) ? arch : REPO_URL + "/blob/main/" + arch;
+    out.push('<a href="' + esc(url) + '" target="_blank" rel="noopener">Liquidación</a>');
+  }
+  return out.length ? out.join("") : "—";
+}
+function cardHtml(p) {
+  const r = normResult(p), prof = profitOf(p);
+  const res = r === "pendiente" ? "Pendiente" : (p.marcador ? esc(p.marcador) + " · " + fmtU(prof) : fmtU(prof));
+  const arg = p.argumento || p.motivo || p.analisis;
+  return '<article class="card"><h3>' + esc(p.partido || "Partido sin título") + '</h3>'
+    + '<div class="meta">' + esc(dateOf(p) || "Fecha pendiente") + ' · ' + esc(p.pick || p.pronostico || "") + ' @ ' + esc(p.cuota ?? "—") + ' · ' + stakeOf(p) + ' u</div>'
+    + '<span class="pill ' + r + '">' + r + '</span> <span>' + res + '</span>'
+    + (arg ? '<details><summary>Argumento breve</summary><p>' + esc(arg) + '</p></details>' : '')
+    + '<div class="links">' + linksOf(p) + '</div></article>';
+}
+function render(picks) {
+  allPicks = picks;
+  const resueltos = picks.filter((p) => normResult(p) !== "pendiente");
+  const verdes = picks.filter((p) => normResult(p) === "verde").length;
+  const rojos = picks.filter((p) => normResult(p) === "rojo").length;
+  const nulos = picks.filter((p) => normResult(p) === "nulo").length;
+  const balance = resueltos.reduce((a, p) => a + profitOf(p), 0);
+  const stakeRes = resueltos.reduce((a, p) => a + stakeOf(p), 0);
+  const cuotas = picks.map((p) => parseFloat(p.cuota)).filter(isFinite);
+  $("cPublicados").textContent = picks.length;
+  $("cResueltos").textContent = resueltos.length;
+  const balEl = $("cBalance"); balEl.textContent = fmtU(balance); balEl.className = "v" + (balance > 0 ? " pos" : balance < 0 ? " neg" : "");
+  $("cYield").textContent = stakeRes > 0 ? fmtPct((balance / stakeRes) * 100) : "—";
+  $("cDesglose").textContent = verdes + " / " + rojos + " / " + nulos;
+  $("cCuota").textContent = cuotas.length ? (cuotas.reduce((a, b) => a + b, 0) / cuotas.length).toFixed(2).replace(".", ",") : "—";
+  const latest = [...picks].reverse().slice(0, 3);
+  $("latest").innerHTML = latest.length ? latest.map(cardHtml).join("") : '<div class="empty">Aún no hay picks publicados. El contador empieza en el pick 1.</div>';
+  renderHistory();
+}
+function renderHistory() {
+  const list = currentFilter === "todos" ? allPicks : allPicks.filter((p) => normResult(p) === currentFilter);
+  $("historyEmpty").style.display = allPicks.length === 0 ? "block" : "none";
+  $("historyTable").innerHTML = list.map((p) => {
+    const r = normResult(p), prof = profitOf(p);
+    const res = r === "pendiente" ? "Pendiente" : (p.marcador ? esc(p.marcador) + " · " + fmtU(prof) : fmtU(prof));
+    return "<tr><td>" + esc(dateOf(p) || "—") + "</td><td>" + esc(p.partido || "") + "</td><td>" + esc(p.pick || p.pronostico || "") + "</td><td>" + esc(p.cuota ?? "—") + "</td><td>" + stakeOf(p) + "</td><td><span class=\"pill " + r + "\">" + r + "</span></td><td>" + res + "</td><td>" + linksOf(p) + "</td></tr>";
+  }).join("");
+  $("historyCards").innerHTML = list.map(cardHtml).join("");
+  if (allPicks.length > 0 && list.length === 0) {
+    $("historyCards").innerHTML = '<div class="empty">Ningún pick con ese estado todavía.</div>';
+  }
+}
+function showError() {
+  $("errorBox").classList.add("show");
+  ["cPublicados", "cResueltos", "cBalance", "cYield", "cDesglose", "cCuota"].forEach((id) => { $(id).textContent = "—"; });
+  $("latest").innerHTML = '<div class="empty">No se han podido cargar los datos del registro. Esto no es un historial vacío.</div>';
+  $("historyError").style.display = "block";
+}
+document.querySelectorAll(".filters button").forEach((b) => {
+  b.addEventListener("click", () => {
+    document.querySelectorAll(".filters button").forEach((x) => x.classList.remove("active"));
+    b.classList.add("active"); currentFilter = b.dataset.filter; renderHistory();
+  });
+});
+(async function load() {
+  try {
+    const res = await fetch("picks.json", { cache: "no-store" });
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const json = await res.json();
+    const picks = Array.isArray(json) ? json : json.picks;
+    if (!Array.isArray(picks)) throw new Error("picks.json sin lista de picks");
+    render(picks);
+  } catch (e) {
+    if (window.PREVIEW_PICKS && Array.isArray(window.PREVIEW_PICKS.picks)) { render(window.PREVIEW_PICKS.picks); return; }
+    showError();
+  }
+})();
+</script>
+</body>
+</html>
