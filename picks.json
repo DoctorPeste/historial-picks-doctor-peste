@@ -1,1 +1,17 @@
-{"picks":[]}
+{
+  "picks": [
+    {
+      "fecha_partido": "2026-10-26",
+      "hora_partido": "22:00 CET (18:00 Chile)",
+      "partido": "Universidad de Chile vs Everton de Viña del Mar",
+      "pick": "Crear apuesta: Universidad de Chile ganará cualquier mitad + Más de 1 gol en total",
+      "cuota": 1.52,
+      "casa": "No identificada en la captura",
+      "stake_u": 1,
+      "resultado": "pendiente",
+      "marcador": "",
+      "archivo": "picks/2026-10-26-universidad-de-chile-vs-everton.md",
+      "publicado_en": ""
+    }
+  ]
+}
