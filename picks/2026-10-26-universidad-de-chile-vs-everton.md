@@ -5,7 +5,7 @@
 - **Pick:** Crear apuesta: Universidad de Chile ganará cualquier mitad + Más de 1 gol en total
 - **Cuota:** 1,52
 - **Stake:** 1 unidad
-- **Casa:** No identificada en la captura. No se inventa ninguna casa.
+- **Casa:** Bet365 (aclarado por Miguel el 26-10: todas las capturas son de Bet365, aunque la captura no mostraba la casa).
 - **Estado:** Pendiente
 - **Resultado:** Pendiente. Se sellará el mismo día 26-10, sin editar este registro previo.
 
