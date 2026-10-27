@@ -6,8 +6,8 @@
 - **Cuota:** 1,53
 - **Stake:** 1 unidad
 - **Casa:** Bet365
-- **Estado:** Pendiente
-- **Resultado:** Pendiente. Se sellará tras el partido, sin editar este registro previo.
+- **Estado:** Sellado — VERDE
+- **Resultado:** VERDE +0,53u @1,53 (sellado el 27-10-2026 tras el partido, sin editar el registro previo).
 
 ## Condición de acierto
 
@@ -25,6 +25,7 @@ No aportado en la captura. No se inventa ningún análisis ni estadística para 
 ## Archivos
 
 - Banner: `banners/banner-pick3-dinamo-zagreb-vs-rijeka.png`
+- Banner resultado: `banners/banner-pick3-ganado-dinamo-zagreb-vs-rijeka.png`
 - Registro: `picks.json`, Pick 3, resultado pendiente.
 
 ## Fuentes de fecha, hora y sede
@@ -35,3 +36,10 @@ No aportado en la captura. No se inventa ningún análisis ni estadística para 
 ## Juego responsable
 
 Solo para mayores de 18 años. La probabilidad de ser un jugador que pierde dinero es del 75 %. Más información en juegoseguro.es.
+
+## Resultado sellado (27-10-2026)
+
+- **Marcador final:** Dinamo Zagreb 2-1 HNK Rijeka (1ª mitad 1-0, 2ª mitad 1-1).
+- **Patas:** ✓ Dinamo ganó una mitad (1ª: 1-0) · ✓ Más de 1 gol en total (3 goles).
+- **Resultado:** VERDE, +0,53u @1,53, 1 unidad.
+- **Fuentes:** Sportradar (final 2-1, periodos 1-0 y 1-1) y SoccerPunter (final 2-1, descanso 1-0).
