@@ -6,8 +6,8 @@
 - **Cuota:** 1,52
 - **Stake:** 1 unidad
 - **Casa:** Bet365 (aclarado por Miguel el 26-10: todas las capturas son de Bet365, aunque la captura no mostraba la casa).
-- **Estado:** Pendiente
-- **Resultado:** Pendiente. Se sellará el mismo día 26-10, sin editar este registro previo.
+- **Estado:** Verde
+- **Resultado:** Verde, +0,52u. Marcador final 4-1.
 
 ## Condición de acierto
 
@@ -22,10 +22,19 @@ Un 1-0, sea para quien sea, es rojo, porque el total es 1 y falla la segunda pat
 
 No aportado en la captura. No se inventa ningún análisis ni estadística para este pick.
 
+## Resultado sellado
+
+- **Marcador final:** Universidad de Chile 4-1 Everton de Viña del Mar (1ª mitad 2-0, 2ª mitad 2-1).
+- **Patas:** U. de Chile ganó una mitad (de hecho, las dos) y el total fue de 5 goles, por encima de 1. Ambas patas entraron.
+- **Balance:** +0,52u a cuota 1,52 con 1 unidad.
+- **Fuentes del resultado:** Sportradar (final 4-1, periodos 2-0 y 2-1) y ESPN (goleada 4-1 en El Teniente, Rancagua).
+- El registro previo no se ha editado: este sellado se añade en commits posteriores.
+
 ## Archivos
 
-- Banner: `banners/banner-pick1-universidad-de-chile-vs-everton.png`
-- Registro: `picks.json`, Pick 1, resultado pendiente.
+- Banner de pick: `banners/banner-pick1-universidad-de-chile-vs-everton.png`
+- Banner de resultado: `banners/banner-pick1-ganado-universidad-de-chile-vs-everton.png`
+- Registro: `picks.json`, Pick 1, resultado verde.
 
 ## Fuentes de fecha, hora y sede
 
