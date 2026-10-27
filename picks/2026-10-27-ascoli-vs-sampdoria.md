@@ -6,8 +6,8 @@
 - **Cuota:** 1,61
 - **Stake:** 1 unidad
 - **Casa:** Bet365 (aclarado por Miguel el 26-10: todas las capturas son de Bet365, aunque la captura no mostraba la casa).
-- **Estado:** Pendiente
-- **Resultado:** Pendiente. Se sellará tras el partido, sin editar este registro previo.
+- **Estado:** Sellado — VERDE
+- **Resultado:** VERDE +0,61u @1,61 (sellado el 27-10-2026 tras el partido, sin editar el registro previo).
 
 ## Condición de acierto
 
@@ -20,6 +20,7 @@ No aportado en la captura. No se inventa ningún análisis ni estadística para 
 ## Archivos
 
 - Banner: `banners/banner-pick2-ascoli-vs-sampdoria.png`
+- Banner resultado: `banners/banner-pick2-ganado-ascoli-vs-sampdoria.png`
 - Registro: `picks.json`, Pick 2, resultado pendiente.
 
 ## Fuentes de fecha, hora y sede
@@ -30,3 +31,10 @@ No aportado en la captura. No se inventa ningún análisis ni estadística para 
 ## Juego responsable
 
 Solo para mayores de 18 años. La ludopatía es un riesgo del juego. Más información en juegoseguro.es.
+
+## Resultado sellado (27-10-2026)
+
+- **Marcador final:** Ascoli 2-0 Sampdoria (1ª mitad 0-0, 2ª mitad 2-0).
+- **Pata:** ✓ Ascoli ganó una mitad (2ª: 2-0).
+- **Resultado:** VERDE, +0,61u @1,61, 1 unidad.
+- **Fuentes:** Sportradar (final 2-0, periodos 0-0 y 2-0) y Sports Mole (Ascoli 2-0 Sampdoria).
