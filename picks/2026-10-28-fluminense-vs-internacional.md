@@ -6,8 +6,8 @@
 - **Cuota:** 1,50
 - **Stake:** 1 unidad
 - **Casa:** Bet365
-- **Estado:** Pendiente
-- **Resultado:** Pendiente. Se sellará tras el partido, sin editar este registro previo.
+- **Estado:** Sellado — VERDE
+- **Resultado:** VERDE +0,50u @1,50 (sellado el 29-10-2026 tras el partido, sin editar el registro previo).
 
 ## Condición de acierto
 
@@ -20,6 +20,7 @@ No aportado en la captura. No se inventa ningún análisis ni estadística para 
 ## Archivos
 
 - Banner: `banners/banner-pick4-fluminense-vs-internacional.png`
+- Banner resultado: `banners/banner-pick4-ganado-fluminense-vs-internacional.png`
 - Registro: `picks.json`, Pick 4, resultado pendiente.
 
 ## Fuentes de fecha, hora y sede
@@ -30,3 +31,10 @@ No aportado en la captura. No se inventa ningún análisis ni estadística para 
 ## Juego responsable
 
 Solo para mayores de 18 años. La probabilidad de ser un jugador que pierde dinero es del 75 %. Más información en juegoseguro.es.
+
+## Resultado sellado (29-10-2026)
+
+- **Marcador final:** Fluminense 2-1 Internacional (1ª mitad 0-0, 2ª mitad 2-1).
+- **Pata:** ✓ Fluminense ganó una mitad (2ª: 2-1; goles: Alan Patrick 1' 2T, Hércules 33' 2T, Acosta 52' 2T).
+- **Resultado:** VERDE, +0,50u @1,50, 1 unidad.
+- **Fuentes:** Sportradar (final 2-1, periodos 0-0 y 2-1) y TyC Sports / Jogada10 (goles todos en la 2ª mitad).
