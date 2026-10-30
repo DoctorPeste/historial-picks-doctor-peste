@@ -64,6 +64,19 @@
       "marcador": "2-0",
       "archivo": "picks/2026-10-29-hammarby-vs-sirius.md",
       "publicado_en": ""
+    },
+    {
+      "fecha_partido": "2026-10-30",
+      "hora_partido": "19:00 / 21:15",
+      "partido": "Doble: Casa Pia vs Sporting + Le Havre vs PSG",
+      "pick": "Doble a resultado final: Sporting gana + PSG gana",
+      "cuota": 1.58,
+      "casa": "Bet365",
+      "stake_u": 1,
+      "resultado": "pendiente",
+      "marcador": "",
+      "archivo": "picks/2026-10-30-doble-sporting-psg.md",
+      "publicado_en": ""
     }
   ]
 }
