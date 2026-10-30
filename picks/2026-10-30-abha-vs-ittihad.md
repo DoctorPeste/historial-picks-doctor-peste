@@ -11,7 +11,7 @@
 
 ## Corrección prepartido (30-10-2026, antes del partido)
 
-La primera versión de este registro decía «Al-Ittihad +1 (hándicap asiático)». Era una lectura errónea de la captura que pasó Miguel: la foto venía recortada y faltaban líneas de la combinada. El pick correcto, confirmado por Miguel, es «Al-Ittihad gana + Más de 1 gol» a la misma cuota 1,72. Se corrigen banner, ficha y picks.json antes del inicio; la versión anterior queda en el historial de commits.
+La primera versión de este registro decía «Al-Ittihad +1 (hándicap asiático)». Era una lectura errónea de la captura recibida: la foto venía recortada y faltaban líneas de la combinada. El pick correcto es «Al-Ittihad gana + Más de 1 gol» a la misma cuota 1,72. Se corrigen banner, ficha y picks.json antes del inicio; la versión anterior queda en el historial de commits.
 
 ## Condición de acierto
 
@@ -19,15 +19,11 @@ Verde si el Al-Ittihad gana el partido y el total de goles es mayor de 1 (es dec
 
 ## Nota sobre la hora
 
-El dossier de La Madriguera para este mismo partido advertía que la hora no estaba cerrada con fuente oficial: el consenso de prensa del 29-30 dice 13:30 CET, pero hay fichas antiguas que dan las 14:45 CET. Este registro se hizo la madrugada del 30-10, antes de cualquiera de las dos horas, así que es previo al partido en ambos casos.
-
-## Relación con La Madriguera
-
-Este mismo mercado (Al-Ittihad gana + Más de 1 gol @1,72) es también el pick 36 de La Madriguera, con su propio dossier y registro. Los registros son independientes: este Pick 7 es el registro propio de Doctor Peste, con su propia ficha, banner y entrada en `picks.json`, sin compartir historial con La Madriguera.
+La hora no estaba cerrada con fuente oficial: el consenso de prensa del 29-30 dice 13:30 CET, pero hay fichas antiguas que dan las 14:45 CET. Este registro se hizo la madrugada del 30-10, antes de cualquiera de las dos horas, así que es previo al partido en ambos casos.
 
 ## Motivo
 
-Dossier previo completo en La Madriguera (forma, bajas de prensa, onces probables). No se inventa ningún análisis adicional para este registro.
+Dossier previo completo (forma, bajas de prensa, onces probables). No se inventa ningún análisis adicional para este registro.
 
 ## Archivos
 
