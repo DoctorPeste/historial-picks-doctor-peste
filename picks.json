@@ -90,6 +90,20 @@
       "marcador": "",
       "archivo": "picks/2026-10-30-abha-vs-ittihad.md",
       "publicado_en": ""
+    },
+    {
+      "fecha_partido": "2026-10-30",
+      "hora_partido": "23:00",
+      "partido": "Coquimbo Unido vs Unión La Calera",
+      "pick": "Coquimbo Unido gana (resultado final) + Más de 1,5 goles",
+      "cuota": 2.0,
+      "casa": "Bet365",
+      "stake_u": 1,
+      "resultado": "pendiente",
+      "marcador": "",
+      "archivo": "picks/2026-10-30-coquimbo-vs-la-calera.md",
+      "publicado_en": ""
     }
-  ]
+  ],
+  "updated": "2026-10-30"
 }
