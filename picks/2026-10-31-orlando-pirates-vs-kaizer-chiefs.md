@@ -5,8 +5,8 @@
 - **Pick:** Orlando Pirates gana (resultado final)
 - **Cuota:** 1.67 (William Hill, según captura)
 - **Stake:** 1 unidad
-- **Estado:** Pendiente
-- **Resultado:** Pendiente. Se sellará tras el partido, sin editar este registro previo.
+- **Estado:** Sellado
+- **Resultado:** VERDE (+0,67u).
 
 ## Registro previo
 
@@ -23,3 +23,11 @@ Condición de la casa indicada por el titular: William Hill da la apuesta por ga
 ## Juego responsable
 
 Solo para mayores de 18 años. Las pérdidas del total de jugadores superan en 4 veces sus ganancias Más información en juegoseguro.es.
+
+## Resultado (sellado 31-10-2026, tras aviso manual)
+
+- **Marcador:** Orlando Pirates 2-1 Kaizer Chiefs (FNB Stadium, Johannesburgo).
+- **Goles:** Mbuthuma 24', Mmodi 30', Moremi 55'.
+- **Verificación:** Sportradar (final 2-1) e iDiski Times (2-1 en FNB Stadium).
+- **Desenlace:** Pirates ganó el partido, así que la victoria simple @1,67 entra sin necesidad del pago anticipado de William Hill.
+- **Banner resultado:** `banners/banner-pick10-pirates-chiefs-ganado.png` (el banner prepartido no se tocó).
