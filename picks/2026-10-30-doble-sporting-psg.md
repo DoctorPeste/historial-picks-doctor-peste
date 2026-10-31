@@ -5,8 +5,8 @@
 - **Cuota doble:** 1,58 (con +2,5% de aumento en la captura)
 - **Stake:** 1 unidad
 - **Casa:** Bet365 (según la aclaración de Miguel del 26-10: todas las capturas de Doctor Peste son de Bet365)
-- **Estado:** Pendiente
-- **Resultado:** Pendiente. Se sellará tras el segundo partido, sin editar este registro previo.
+- **Estado:** Sellado
+- **Resultado:** VERDE.
 
 ## Partidos
 
@@ -38,3 +38,9 @@ Miguel envió primero una captura recortada que solo mostraba «Saint germain» 
 ## Juego responsable
 
 Solo para mayores de 18 años. La probabilidad de ser un jugador que pierde dinero es del 75 %. Más información en juegoseguro.es.
+
+## Resultado (sellado 31-10-2026, con autorización expresa)
+
+- **Marcadores:** Casa Pia 0-2 Sporting (Lima 13', Catamo 90+4') y Le Havre 1-5 PSG.
+- **Desenlace:** VERDE (+0,58u). Entraron las dos patas de la doble @1,58.
+- **Banner resultado:** `banners/banner-pick6-doble-ganado.png` (el banner prepartido no se tocó).
