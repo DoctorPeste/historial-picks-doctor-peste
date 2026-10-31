@@ -5,8 +5,8 @@
 - **Pick:** IFK Norrköping gana (resultado final)
 - **Cuota:** 2.25 (Bet365, según captura)
 - **Stake:** 1 unidad
-- **Estado:** Pendiente
-- **Resultado:** Pendiente. Se sellará tras el partido, sin editar este registro previo.
+- **Estado:** Sellado
+- **Resultado:** VERDE.
 
 ## Registro previo
 
@@ -21,3 +21,9 @@ sin combinada. Verde solo si ese equipo gana el partido; empate o derrota es roj
 ## Juego responsable
 
 Solo para mayores de 18 años. La probabilidad de ser un jugador que pierde dinero es del 75 % Más información en juegoseguro.es.
+
+## Resultado (sellado 31-10-2026, con autorización expresa)
+
+- **Marcador:** IFK Norrköping 3-0 Östersunds FK (Nelson 26', Aleksanjan 48', Neffati 66').
+- **Desenlace:** VERDE (+1,25u). Victoria simple @2,25.
+- **Banner resultado:** `banners/banner-pick9-norrkoping-ganado.png` (el banner prepartido no se tocó).
