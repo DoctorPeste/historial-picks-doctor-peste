@@ -5,8 +5,8 @@
 - **Pick:** Coquimbo Unido gana (resultado final) + Más de 1,5 goles
 - **Cuota:** 2,00 (Bet365, según captura)
 - **Stake:** 1 unidad
-- **Estado:** Pendiente
-- **Resultado:** Pendiente. Se sellará tras el partido, sin editar este registro previo.
+- **Estado:** Sellado
+- **Resultado:** ROJO.
 
 ## Registro previo
 
@@ -23,3 +23,9 @@ rojo, porque la pata de goles necesita más de un gol (no hay push).
 ## Juego responsable
 
 Solo para mayores de 18 años. La ludopatía es un riesgo del juego. Más información en juegoseguro.es.
+
+## Resultado (sellado 31-10-2026, con autorización expresa)
+
+- **Marcador:** Coquimbo Unido 1-0 Unión La Calera.
+- **Desenlace:** ROJO (−1,00u). La pata «gana» entró, pero la de goles no (1 gol total).
+- **Banner resultado:** `banners/banner-pick8-coquimbo-perdido.png` (el banner prepartido no se tocó).
