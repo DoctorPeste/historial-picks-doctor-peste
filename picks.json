@@ -103,7 +103,20 @@
       "marcador": "",
       "archivo": "picks/2026-10-30-coquimbo-vs-la-calera.md",
       "publicado_en": ""
+    },
+    {
+      "fecha_partido": "2026-10-31",
+      "hora_partido": "13:00",
+      "partido": "IFK Norrköping vs Östersunds FK",
+      "pick": "IFK Norrköping gana (resultado final)",
+      "cuota": 2.25,
+      "casa": "Bet365",
+      "stake_u": 1,
+      "resultado": "pendiente",
+      "marcador": "",
+      "archivo": "picks/2026-10-31-ifk-norrkoping-vs-ostersunds-fk.md",
+      "publicado_en": ""
     }
   ],
-  "updated": "2026-10-30"
+  "updated": "2026-10-31"
 }
