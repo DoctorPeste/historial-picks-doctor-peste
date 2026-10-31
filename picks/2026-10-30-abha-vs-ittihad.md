@@ -6,8 +6,8 @@
 - **Cuota:** 1,72
 - **Stake:** 1 unidad
 - **Casa:** Bet365
-- **Estado:** Pendiente
-- **Resultado:** Pendiente. Se sellará tras el partido, sin editar este registro previo.
+- **Estado:** Sellado
+- **Resultado:** ROJO.
 
 ## Corrección prepartido (30-10-2026, antes del partido)
 
@@ -34,3 +34,9 @@ Dossier previo completo (forma, bajas de prensa, onces probables). No se inventa
 ## Juego responsable
 
 Solo para mayores de 18 años. La probabilidad de ser un jugador que pierde dinero es del 75 %. Más información en juegoseguro.es.
+
+## Resultado (sellado 31-10-2026, con autorización expresa)
+
+- **Marcador:** Abha 1-1 Al-Ittihad (Aouar 52', Al-Subiani 87').
+- **Desenlace:** ROJO (−1,00u). La pata de goles entró (2 goles), pero el Al-Ittihad no ganó.
+- **Banner resultado:** `banners/banner-pick7-abha-perdido.png` (el banner prepartido no se tocó).
