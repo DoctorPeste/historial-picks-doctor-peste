@@ -142,7 +142,20 @@
       "marcador": "",
       "archivo": "picks/2026-10-31-standard-de-lieja-vs-kv-kortrijk.md",
       "publicado_en": ""
+    },
+    {
+      "fecha_partido": "2026-11-01",
+      "hora_partido": "15:00",
+      "partido": "SS Arezzo vs Ascoli Calcio 1898",
+      "pick": "Ascoli gana (resultado final)",
+      "cuota": 2.05,
+      "casa": "",
+      "stake_u": 1,
+      "resultado": "pendiente",
+      "marcador": "",
+      "archivo": "picks/2026-11-01-ss-arezzo-vs-ascoli-calcio.md",
+      "publicado_en": ""
     }
   ],
-  "updated": "2026-10-31"
+  "updated": "2026-11-01"
 }
