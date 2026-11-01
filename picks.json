@@ -151,8 +151,8 @@
       "cuota": 2.05,
       "casa": "",
       "stake_u": 1,
-      "resultado": "pendiente",
-      "marcador": "",
+      "resultado": "rojo",
+      "marcador": "SS Arezzo 0-0 Ascoli Calcio 1898 (empate, Ascoli no gana ✗)",
       "archivo": "picks/2026-11-01-ss-arezzo-vs-ascoli-calcio.md",
       "publicado_en": ""
     },
@@ -183,5 +183,5 @@
       "publicado_en": ""
     }
   ],
-  "updated": "2026-11-01"
+  "updated": "2026-11-02"
 }
