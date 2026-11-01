@@ -5,8 +5,8 @@
 - **Pick:** Académico Viseu gana (resultado final)
 - **Cuota:** 1.81 (según captura; casa no visible en la captura)
 - **Stake:** 1 unidad
-- **Estado:** Pendiente
-- **Resultado:** Pendiente. Se sellará tras el partido, sin editar este registro previo.
+- **Estado:** Sellado
+- **Resultado:** VERDE (+0,81u).
 
 ## Registro previo
 
@@ -20,3 +20,11 @@ Mercado confirmado en chat antes del registro: victoria simple del equipo indica
 ## Juego responsable
 
 Solo para mayores de 18 años. Las pérdidas del total de jugadores superan en 4 veces sus ganancias Más información en juegoseguro.es.
+
+## Resultado (sellado 02-11-2026, tras aviso manual)
+
+- **Marcador:** Académico Viseu 2-1 Rio Ave (Estádio do Fontelo, Viseu).
+- **Goles:** Miguel Patrício 38' (0-1), Soufiane Messeguem 69' (1-1), André Clóvis 77' (2-1).
+- **Verificación:** Kicker (2-1), Mediotiempo (final 2-1) y Sports Mole (2-1 FT).
+- **Desenlace:** el Viseu remontó y ganó el partido, así que la victoria simple @1,81 entra.
+- **Banner resultado:** `banners/banner-pick13-academico-viseu-ganado.png` (el banner prepartido no se tocó).
