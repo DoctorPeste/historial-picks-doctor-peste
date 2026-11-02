@@ -181,6 +181,19 @@
       "marcador": "Nashville SC 3-2 New York Red Bulls (Nashville gana ✓, 5 goles)",
       "archivo": "picks/2026-11-01-nashville-sc-vs-new-york-red-bulls.md",
       "publicado_en": ""
+    },
+    {
+      "fecha_partido": "2026-11-02",
+      "hora_partido": "18:30",
+      "partido": "FC Arda Kardzhali vs FK Septemvri Sofia",
+      "pick": "FC Arda Kardzhali gana (resultado final)",
+      "cuota": 1.57,
+      "casa": "",
+      "stake_u": 1,
+      "resultado": "pendiente",
+      "marcador": "",
+      "archivo": "picks/2026-11-02-arda-kardzhali-vs-septemvri-sofia.md",
+      "publicado_en": ""
     }
   ],
   "updated": "2026-11-02"
