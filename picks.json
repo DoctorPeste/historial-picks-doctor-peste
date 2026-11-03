@@ -194,7 +194,20 @@
       "marcador": "FC Arda Kardzhali 2-1 FK Septemvri Sofia (Arda gana ✓)",
       "archivo": "picks/2026-11-02-arda-kardzhali-vs-septemvri-sofia.md",
       "publicado_en": ""
+    },
+    {
+      "fecha_partido": "2026-11-03",
+      "hora_partido": "19:00",
+      "partido": "CD Pamplona vs SD Eibar + FK Bodø/Glimt vs LOSC Lille",
+      "pick": "SD Eibar gana + más de 1 gol + más de 1,5 goles en Bodø/Glimt vs Lille",
+      "cuota": 1.61,
+      "casa": "Bet365",
+      "stake_u": 1,
+      "resultado": "pendiente",
+      "marcador": "",
+      "archivo": "picks/2026-11-03-pamplona-eibar-bodo-glimt-lille.md",
+      "publicado_en": ""
     }
   ],
-  "updated": "2026-11-02"
+  "updated": "2026-11-03"
 }
