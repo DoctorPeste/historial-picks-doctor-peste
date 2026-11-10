@@ -230,8 +230,8 @@
       "cuota": 1.65,
       "casa": "",
       "stake_u": 1,
-      "resultado": "pendiente",
-      "marcador": "",
+      "resultado": "rojo",
+      "marcador": "CSC 1599 Șelimbăr 0-2 CSL Ștefăneștii de Jos (Șelimbăr no gana ✗)",
       "archivo": "picks/2026-11-07-selimbar-stefanesti.md",
       "publicado_en": ""
     },
@@ -288,5 +288,5 @@
       "publicado_en": ""
     }
   ],
-  "updated": "2026-11-05"
+  "updated": "2026-11-10"
 }
